@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            transition: background-color 1s ease-in-out;
+        }
+        #cv {
+            text-align: center;
+        }
+        #gif {
+            display: none;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="cv">
+        <h1>Trần Hải Đăng</h1>
+        <p><strong>Front-end Developer</strong></p>
+        <p>📧 nguyenvana@email.com | 📞 0123 456 789</p>
+        <p>Kinh nghiệm: 3 năm làm việc với ReactJS, VueJS</p>
+    </div>
+    
+    <img id="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGZ1ZHM5YW5xMmp3cDFrZnV1em5udHF0OTFkNjhxZGt2MXo1OHRweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OWdD7XacltTGg/giphy.gif" alt="F*ck">
+    
+    <script>
+        setTimeout(() => {
+            document.body.style.backgroundColor = "black";
+            document.getElementById("cv").style.display = "none";
+            document.getElementById("gif").style.display = "block";
+        }, 3000); // Chuyển sang GIF sau 3 giây
+    </script>
+</body>
+</html>
